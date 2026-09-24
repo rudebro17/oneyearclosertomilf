@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nuha's Secret Store — A one-of-a-kind birthday experience. Things money can't buy, fortunately they're all free." />
+  <meta name="description"
+    content="Nuha's Secret Store — A one-of-a-kind birthday experience. Things money can't buy, fortunately they're all free." />
   <title>Nuha's Secret Store ♡</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=IM+Fell+English:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=IM+Fell+English:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ══════════════════════════════════════════════ -->
@@ -30,13 +35,8 @@
         <a href="#store" class="nav-link">SHOP</a>
         <a href="#playlist" class="nav-link">PLAYLIST</a>
         <a href="#birthday" class="nav-link">BIRTHDAY</a>
-        <button
-          id="cart-toggle"
-          class="cart-btn"
-          aria-label="Open cart"
-          aria-expanded="false"
-          aria-controls="cart-sidebar"
-        >
+        <button id="cart-toggle" class="cart-btn" aria-label="Open cart" aria-expanded="false"
+          aria-controls="cart-sidebar">
           <span class="cart-icon" aria-hidden="true">♡</span>
           <span class="cart-label">CART</span>
           <span class="cart-count" id="cart-count" aria-live="polite">0</span>
@@ -48,13 +48,7 @@
   <!-- ══════════════════════════════════════════════ -->
   <!--  CART SIDEBAR                                  -->
   <!-- ══════════════════════════════════════════════ -->
-  <aside
-    id="cart-sidebar"
-    class="cart-sidebar"
-    role="complementary"
-    aria-label="Shopping cart"
-    aria-hidden="true"
-  >
+  <aside id="cart-sidebar" class="cart-sidebar" role="complementary" aria-label="Shopping cart" aria-hidden="true">
     <div class="cart-sidebar-inner">
       <div class="cart-header">
         <h2 class="cart-title">YOUR CART ♡</h2>
@@ -171,24 +165,15 @@
       </div>
 
       <!-- Product grid populated by JS -->
-      <div
-        class="product-grid"
-        id="product-grid"
-        role="list"
-        aria-label="Products available in Nuha's Secret Store"
-      ></div>
+      <div class="product-grid" id="product-grid" role="list" aria-label="Products available in Nuha's Secret Store">
+      </div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════ -->
   <!--  ORDER CONFIRMATION (hidden until checkout)    -->
   <!-- ══════════════════════════════════════════════ -->
-  <section
-    id="order-confirmation"
-    class="order-section hidden"
-    aria-label="Order confirmation"
-    aria-live="polite"
-  >
+  <section id="order-confirmation" class="order-section hidden" aria-label="Order confirmation" aria-live="polite">
     <div class="order-inner">
       <div class="order-badge" aria-hidden="true">✦</div>
       <p class="order-pre">ORDER RECEIVED ❤️</p>
@@ -246,11 +231,7 @@
             For the moments when<br />
             <em>words aren't enough.</em>
           </p>
-          <button
-            id="playlist-btn"
-            class="playlist-play-btn"
-            aria-label="Play Nuha's playlist on Spotify"
-          >
+          <button id="playlist-btn" class="playlist-play-btn" aria-label="Play Nuha's playlist on Spotify">
             ♫ PLAY NUHA'S PLAYLIST
           </button>
           <p class="playlist-note">Opens in Spotify ✦</p>
@@ -288,7 +269,8 @@
             <p class="letter-salutation">My dearest Nuha,</p>
 
             <p class="birthday-message-text">
-              [YOUR PERSONAL BIRTHDAY MESSAGE HERE]
+              Happy birthday love!!!!!<br />Finally the numbers are changing from 0-2 to 1-2. Happy 21, Best
+              wishes!!<br />
             </p>
 
             <p class="letter-closing">Forever yours, ♡</p>
@@ -305,14 +287,7 @@
   <!-- ══════════════════════════════════════════════ -->
   <section id="moodboard" class="moodboard-section" aria-label="Moodboard">
     <div class="moodboard-bg-image" aria-hidden="true">
-      <img
-        src="assets/images/moodboard_bg.jpg"
-        alt=""
-        role="presentation"
-        loading="lazy"
-        width="1440"
-        height="810"
-      />
+      <img src="assets/images/moodboard_bg.jpg" alt="" role="presentation" loading="lazy" width="1440" height="810" />
     </div>
 
     <div class="moodboard-overlay" aria-hidden="true"></div>
@@ -367,4 +342,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

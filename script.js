@@ -8,7 +8,7 @@
    ── PASTE YOUR SPOTIFY PLAYLIST LINK HERE ──
    Example: "https://open.spotify.com/playlist/37i9dQZF1DX0..."
    ───────────────────────────────────────────────────────────── */
-const spotifyPlaylistUrl = "PASTE SPOTIFY LINK HERE";
+const spotifyPlaylistUrl = "https://open.spotify.com/playlist/7sWx89PCG8WVYfu3Qn7y6j?si=EDYLdYYwR-WTJbVeDATM9w&utm_source=whatsapp&pi=uh4EEoznRAigt";
 
 /* ─────────────────────────────────────────────────────────────
    PRODUCT DATA
