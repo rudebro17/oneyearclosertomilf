@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nuha's Secret Store — A one-of-a-kind birthday experience. Things money can't buy, fortunately they're all free." />
+  <title>Nuha's Secret Store ♡</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=IM+Fell+English:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  GRAIN OVERLAY                                 -->
+  <!-- ══════════════════════════════════════════════ -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  NAV                                           -->
+  <!-- ══════════════════════════════════════════════ -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <span class="nav-logo">✦ NUHA'S <em>SECRET</em> STORE ✦</span>
+      <div class="nav-links">
+        <a href="#store" class="nav-link">SHOP</a>
+        <a href="#playlist" class="nav-link">PLAYLIST</a>
+        <a href="#birthday" class="nav-link">BIRTHDAY</a>
+        <button
+          id="cart-toggle"
+          class="cart-btn"
+          aria-label="Open cart"
+          aria-expanded="false"
+          aria-controls="cart-sidebar"
+        >
+          <span class="cart-icon" aria-hidden="true">♡</span>
+          <span class="cart-label">CART</span>
+          <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  CART SIDEBAR                                  -->
+  <!-- ══════════════════════════════════════════════ -->
+  <aside
+    id="cart-sidebar"
+    class="cart-sidebar"
+    role="complementary"
+    aria-label="Shopping cart"
+    aria-hidden="true"
+  >
+    <div class="cart-sidebar-inner">
+      <div class="cart-header">
+        <h2 class="cart-title">YOUR CART ♡</h2>
+        <button id="cart-close" class="cart-close-btn" aria-label="Close cart">✕</button>
+      </div>
+
+      <div id="cart-items" class="cart-items" aria-live="polite" aria-label="Cart items">
+        <p class="cart-empty-msg" id="cart-empty-msg">Your cart is empty. Add something beautiful.</p>
+      </div>
+
+      <div class="cart-summary" id="cart-summary" aria-label="Cart totals">
+        <div class="cart-row">
+          <span>SUBTOTAL</span><span>₹0</span>
+        </div>
+        <div class="cart-row">
+          <span>DISCOUNT</span><span>-₹0</span>
+        </div>
+        <div class="cart-row cart-total-row">
+          <span>TOTAL</span><span>₹0</span>
+        </div>
+
+        <div class="checkout-methods" role="group" aria-label="Payment method">
+          <p class="checkout-label">PAY WITH:</p>
+          <label class="checkout-option">
+            <input type="radio" name="payment" value="love" checked />
+            <span>♡ Love</span>
+          </label>
+          <label class="checkout-option">
+            <input type="radio" name="payment" value="time" />
+            <span>♡ Time</span>
+          </label>
+          <label class="checkout-option">
+            <input type="radio" name="payment" value="hugs" />
+            <span>♡ Hugs</span>
+          </label>
+          <label class="checkout-option">
+            <input type="radio" name="payment" value="being-there" />
+            <span>♡ Being There</span>
+          </label>
+        </div>
+
+        <button id="place-order-btn" class="place-order-btn" aria-label="Place your order">
+          PLACE ORDER
+        </button>
+      </div>
+    </div>
+  </aside>
+  <div id="cart-backdrop" class="cart-backdrop" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  HERO                                          -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="hero" class="hero" aria-label="Welcome to Nuha's Secret Store">
+    <div class="hero-stars" aria-hidden="true">
+      <span class="star s1">✦</span>
+      <span class="star s2">★</span>
+      <span class="star s3">✧</span>
+      <span class="star s4">✦</span>
+      <span class="star s5">✶</span>
+      <span class="star s6">★</span>
+      <span class="star s7">✦</span>
+      <span class="star s8">✧</span>
+      <span class="star s9">✶</span>
+      <span class="star s10">✦</span>
+    </div>
+
+    <div class="hero-tag hero-tag-top" aria-hidden="true">LOVE DEPARTMENT</div>
+
+    <div class="hero-content">
+      <p class="hero-pre">✦ EST. FOREVER ✦</p>
+      <h1 class="hero-title">
+        <span class="hero-name">NUHA'S</span>
+        <span class="hero-subtitle-word">SECRET</span>
+        <span class="hero-store-word">STORE</span>
+      </h1>
+      <p class="hero-tagline">
+        everything you deserve<br />
+        but unfortunately…<br />
+        <span class="hero-price">₹0</span>
+      </p>
+
+      <div class="hero-divider" aria-hidden="true">
+        <span>⛓</span>
+        <span class="divider-line"></span>
+        <span>♡</span>
+        <span class="divider-line"></span>
+        <span>⛓</span>
+      </div>
+
+      <a href="#store" class="hero-btn" id="enter-store-btn">ENTER THE STORE →</a>
+
+      <p class="hero-fine-print" aria-hidden="true">
+        NO REFUNDS. NO EXCHANGES. LIFETIME WARRANTY.
+      </p>
+    </div>
+
+    <div class="hero-tag hero-tag-bottom" aria-hidden="true">100% IRREPLACEABLE</div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">↓ scroll ↓</div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  STORE                                         -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="store" class="store-section" aria-label="The Nuha Collection">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-pre-label">✦ EXCLUSIVELY YOURS ✦</p>
+        <h2 class="section-title">THE NUHA COLLECTION</h2>
+        <p class="section-subtitle">
+          Things money can't buy.<br />
+          <em>Fortunately, they're all free.</em>
+        </p>
+      </div>
+
+      <!-- Product grid populated by JS -->
+      <div
+        class="product-grid"
+        id="product-grid"
+        role="list"
+        aria-label="Products available in Nuha's Secret Store"
+      ></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  ORDER CONFIRMATION (hidden until checkout)    -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section
+    id="order-confirmation"
+    class="order-section hidden"
+    aria-label="Order confirmation"
+    aria-live="polite"
+  >
+    <div class="order-inner">
+      <div class="order-badge" aria-hidden="true">✦</div>
+      <p class="order-pre">ORDER RECEIVED ❤️</p>
+      <h2 class="order-title">ORDER CONFIRMED</h2>
+      <p class="order-number">ORDER #NUHA-0001</p>
+
+      <div class="order-details" aria-label="Order details">
+        <div class="order-row">
+          <span>Payment</span><span>₹0</span>
+        </div>
+        <div class="order-row">
+          <span>Shipping</span><span>Free</span>
+        </div>
+        <div class="order-row">
+          <span>Estimated Delivery</span><span>Every day ♡</span>
+        </div>
+      </div>
+
+      <div class="order-heart-animation" aria-hidden="true">
+        <span class="big-heart">♥</span>
+        <span class="pulse-ring"></span>
+        <span class="pulse-ring delay"></span>
+      </div>
+
+      <p class="order-message">
+        Your order isn't being shipped.<br />
+        <em>It's already with you.</em>
+      </p>
+
+      <a href="#birthday" class="order-continue-btn">
+        CONTINUE TO YOUR BIRTHDAY ↓
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  PLAYLIST                                      -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="playlist" class="playlist-section" aria-label="Her Playlist">
+    <div class="section-inner">
+      <div class="playlist-content">
+        <div class="playlist-vinyl" aria-hidden="true">
+          <div class="vinyl-disc">
+            <div class="vinyl-label">
+              <span class="vinyl-text">NUHA</span>
+              <span class="vinyl-sub">♡ MIX TAPE ♡</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="playlist-text">
+          <p class="section-pre-label">✦ CURATED FOR HER ✦</p>
+          <h2 class="section-title">HER PLAYLIST</h2>
+          <p class="section-subtitle">
+            For the moments when<br />
+            <em>words aren't enough.</em>
+          </p>
+          <button
+            id="playlist-btn"
+            class="playlist-play-btn"
+            aria-label="Play Nuha's playlist on Spotify"
+          >
+            ♫ PLAY NUHA'S PLAYLIST
+          </button>
+          <p class="playlist-note">Opens in Spotify ✦</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  BIRTHDAY MESSAGE                              -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="birthday" class="birthday-section" aria-label="Birthday message">
+    <div class="birthday-stars" aria-hidden="true">
+      <span class="bstar b1">✦</span>
+      <span class="bstar b2">★</span>
+      <span class="bstar b3">✧</span>
+      <span class="bstar b4">✶</span>
+      <span class="bstar b5">✦</span>
+    </div>
+
+    <div class="section-inner">
+      <div class="birthday-header">
+        <p class="section-pre-label">✦ WITH LOVE ✦</p>
+        <h2 class="birthday-title">HAPPY BIRTHDAY,<br /><span class="birthday-name">NUHA ❤️</span></h2>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════════
+           EDIT THIS: YOUR PERSONAL BIRTHDAY MESSAGE FOR NUHA
+           Replace the placeholder text in <p class="birthday-message-text"> below
+           with your own heartfelt message. You can use <br /> for line breaks.
+           ═══════════════════════════════════════════════════════ -->
+      <div class="birthday-letter" role="article" aria-label="Birthday letter">
+        <div class="letter-paper">
+          <div class="letter-inner">
+            <p class="letter-salutation">My dearest Nuha,</p>
+
+            <p class="birthday-message-text">
+              [YOUR PERSONAL BIRTHDAY MESSAGE HERE]
+            </p>
+
+            <p class="letter-closing">Forever yours, ♡</p>
+          </div>
+        </div>
+      </div>
+      <!-- END EDIT SECTION -->
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  MOODBOARD                                     -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="moodboard" class="moodboard-section" aria-label="Moodboard">
+    <div class="moodboard-bg-image" aria-hidden="true">
+      <img
+        src="assets/images/moodboard_bg.jpg"
+        alt=""
+        role="presentation"
+        loading="lazy"
+        width="1440"
+        height="810"
+      />
+    </div>
+
+    <div class="moodboard-overlay" aria-hidden="true"></div>
+
+    <div class="moodboard-grid" aria-label="Moodboard collage elements">
+      <div class="mood-card mc1 tilt-left" aria-hidden="true">
+        <span class="mood-motif">♡</span>
+        <p class="mood-text">made for Nuha ♡</p>
+      </div>
+      <div class="mood-card mc2 tilt-right" aria-hidden="true">
+        <span class="mood-motif">✦</span>
+        <p class="mood-text">LOVE DEPARTMENT</p>
+      </div>
+      <div class="mood-card mc3 tilt-left" aria-hidden="true">
+        <span class="mood-motif">⛓</span>
+        <p class="mood-text">EST. FOREVER</p>
+      </div>
+      <div class="mood-card mc4 tilt-right" aria-hidden="true">
+        <span class="mood-motif">★</span>
+        <p class="mood-text">100% IRREPLACEABLE</p>
+      </div>
+      <div class="mood-card mc5 tilt-left" aria-hidden="true">
+        <span class="mood-motif">🌹</span>
+        <p class="mood-text">HANDLE WITH LOVE</p>
+      </div>
+      <div class="mood-card mc6 tilt-right" aria-hidden="true">
+        <span class="mood-motif">♡</span>
+        <p class="mood-text">FOR NUHA ONLY</p>
+      </div>
+      <div class="mood-card mc7 tilt-left" aria-hidden="true">
+        <span class="mood-motif">✦</span>
+        <p class="mood-text">LIMITED EDITION ♡</p>
+      </div>
+      <div class="mood-card mc8 tilt-right" aria-hidden="true">
+        <span class="mood-motif">🎵</span>
+        <p class="mood-text">SONGS WRITTEN FOR HER</p>
+      </div>
+    </div>
+
+    <div class="moodboard-footer-text" aria-hidden="true">
+      ✦ &nbsp; NUHA &nbsp; ✦ &nbsp; NUHA &nbsp; ✦ &nbsp; NUHA &nbsp; ✦ &nbsp; NUHA &nbsp; ✦ &nbsp; NUHA &nbsp; ✦
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  FOOTER                                        -->
+  <!-- ══════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <p class="footer-text">✦ NUHA'S SECRET STORE ✦</p>
+    <p class="footer-sub">Made with ❤️ &nbsp;·&nbsp; No refunds &nbsp;·&nbsp; Lifetime warranty</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
