@@ -51,9 +51,9 @@ const products = [
   {
     id: 5,
     no: "NO. 005",
-    name: "One Emergency Cuddle",
-    desc: "Valid during bad days, stressful nights, and whenever you need me.",
-    sku: "SKU-NUH-CUDL-001",
+    name: "Random Stickers of You",
+    desc: "A carefully curated collection of the most random, goofy, and cute stickers of you.",
+    sku: "SKU-NUH-STKR-001",
     motif: "⛓",
   },
   {
